@@ -1,0 +1,208 @@
+
+/* -------------------------------------------------------------------- */
+/* ----------- CSS STYLE SHEET FOR NICOLES PERSONAL WEBSITE ----------- */
+/* -------------------------------------------------------------------- */
+
+
+/* --------------------------- DOCUMENT BODY -------------------------- */ 
+
+/* Font and weight */
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+}
+
+/* Text size and line spacing */
+p {
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+/* Accent colors, sizes, and padding */
+i {
+  color: #f2d7d5;
+  font-size: 45px;
+  padding-left: 5px;
+}
+
+/* Font size and line spacing for list items */
+li {
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+table {
+  font-size: 18px;
+  width: 100%;
+}
+
+/* ------------------------ TOP NAVIGATION BAR ------------------------ */ 
+
+/* Adding background color */
+.topnav {
+  background-color: #F2D7D5;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding-left: 300px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 5px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #E6B0AA;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #E6B0AA;
+  color: black;
+}
+
+
+/* --------------------- PROFILE AND INTRO IMAGES --------------------- */ 
+
+/* Style the website header (profile image and intro image) */
+.header {
+  padding-top: 110px;
+  padding-right: 300px;
+  padding-bottom: 50px;
+  padding-left: 300px;
+
+}
+
+/* Curved edges and shadow for profile photo */
+.profile {
+  border-radius: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Flex display to place images side by side */
+#parent {
+  display: flex;
+}
+
+/* Profile photo div sizing */
+#profile-photo {
+  width:250px;
+  float:left;
+}
+
+/* Right div */
+#intro {
+  flex: 1;
+  padding-left: 50px;
+}
+
+/* Intro photo padding */
+#introphoto {
+  padding-bottom: 23px;
+}
+
+/* Inline arrangment of icons */
+.child {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+/* Color changing icons on hover */
+.fa-envelope:hover {
+    color: #E6B0AA;
+}
+
+
+.fa-linkedin:hover {
+    color: #E6B0AA;
+}
+
+.fa-graduation-cap:hover {
+    color: #E6B0AA;
+}
+
+.fa-github:hover {
+    color: #E6B0AA;
+}
+
+.fa-instagram:hover {
+    color: #E6B0AA;
+}
+
+
+/* ---------------------- INFORMATION SECTIONS ---------------------- */ 
+
+/* Div padding */
+.text {
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+/* ---------------------------- CV CARDS ---------------------------- */ 
+
+/* Div padding */
+.card {
+  border-radius: 5px;
+  margin-left: 300px;
+  margin-right: 300px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  box-shadow: 0 4px 14px 0 rgba(0,0,0,0.1);
+}
+
+.card-header {
+  font-size: 25px;
+}
+
+.date {
+  width: 18%;
+  align: right;
+  vertical-align: top;
+}
+
+.small-tag {
+  border-radius: 5px;
+  background-color: #F2D7D5;
+  width: 85%;
+  /*margin-right: 10px;
+  padding-left: 15px;*/
+}
+
+.right-column {
+  line-height: 1.5;
+}
+
+/* ---------------------- BOTTOM COPYRIGHT BAR ---------------------- */ 
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding-left: 300px;
+  letter-spacing: 1.5px;
+}
+
+#copyright {
+  font-size: 11px;
+  line-height: 0.5;
+}
+
+
