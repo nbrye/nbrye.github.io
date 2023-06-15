@@ -52,10 +52,11 @@ hr {
   z-index: 500;
 }
 
+
 /* ------------------------ TOP NAVIGATION BAR ------------------------ */ 
 
 /* Adding background color */
-.topnav {
+/*.topnav {
   background-color: #F2D7D5;
   overflow: hidden;
   position: fixed;
@@ -65,10 +66,10 @@ hr {
   padding-left: 300px;
   margin-right: 0;
   z-index: 550;
-}
+}*/
 
 /* Style the links inside the navigation bar */
-.topnav a {
+/*.topnav a {
   float: left;
   color: black;
   text-align: center;
@@ -78,19 +79,75 @@ hr {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 20px;
-}
+}*/
 
 /* Change the color of links on hover */
-.topnav a:hover {
+/*.topnav a:hover {
   background-color: #E6B0AA;
   color: black;
-}
+}*/
 
 /* Add a color to the active/current link */
-.topnav a.active {
+/*.topnav a.active {
   background-color: #E6B0AA;
   color: black;
+}*/
+
+header {
+  background-color: #F2D7D5;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 550;
 }
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+nav {
+  float: right;
+  margin-right: 300px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+/*  margin-left: 35px;*/
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-align: center;
+}
+
+nav li:hover {
+  background-color: #E6B0AA;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+  margin-left: 300px;
+}
+
+
 
 /* ----------------------------- DIVIDERS ----------------------------- */
 
