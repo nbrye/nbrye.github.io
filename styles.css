@@ -215,6 +215,12 @@ nav li:hover {
   padding-right: 10px;
 }
 
+.test {
+  display: inline-block;
+  float: right;
+  margin-top: 50px;
+}
+
 /* Color changing icons on hover */
 .fa-envelope:hover {
     color: #E6B0AA;
@@ -234,6 +240,10 @@ nav li:hover {
 }
 
 .fa-instagram:hover {
+    color: #E6B0AA;
+}
+
+.fa-file-pdf:hover {
     color: #E6B0AA;
 }
 
@@ -312,6 +322,49 @@ nav li:hover {
 
 .right-column {
   line-height: 1.5;
+}
+
+/* -------------------------- CONTACT FORM -------------------------- */ 
+
+.contact-box {
+  width: 500px;
+  background-color: #fff;
+  box-shadow: 0 0 20px 0 #999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+}
+
+form {
+  margin: 35px;
+}
+
+.input-field {
+  width: 400px;
+  height: 40px;
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #777;
+  border-radius: 14px;
+  outline: none;
+}
+
+.textarea-field {
+  height: 150px;
+  padding-top: 10px;
+}
+
+.btn {
+  border-radius: 20px;
+  color: #fff;
+  margin-top: 18px;
+  padding: 10px;
+  background-color: #47c35a;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
 }
 
 /* ---------------------- BOTTOM COPYRIGHT BAR ---------------------- */ 
