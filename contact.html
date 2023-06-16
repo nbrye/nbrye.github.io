@@ -45,6 +45,33 @@
   <img src="images/contact.png" height=100px>
 </div>
 
+<div class="contact-box">
+  <form onsubmit="sendEmail(); reset(); return false;">
+    <input type="text" class="input-field" placeholder="Your Name">
+    <input type="email" class="input-field" placeholder="Your Email">
+    <input type="text" class="input-field" placeholder="Subject">
+    <textarea type="text" class="input-field textarea-field" placeholder="Your Message"></textarea>
+    <button type="button", class="btn">Send Message</button>
+  </form>
+</div>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+  function sendEmail(){
+    Email.send({
+      Host : "smtp.gmail.com",
+      Username : "nicole.brye9@gmail.com",
+      Password : "password",
+      To : 'nabrye@yahoo.com',
+      From : document.getElementByID("email").value,
+      Subject : "New Contact Form Inquiry",
+      Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );
+  }
+
+</script>
 
 <!-- Contact icons -->
 <div class="center-txt">
