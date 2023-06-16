@@ -273,8 +273,9 @@ nav li:hover {
 .vert-card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  width: 33%;
+  width: 30%;
   font-size: 15px;
+  display: inline-block;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -370,14 +371,16 @@ form {
 /* ---------------------- BOTTOM COPYRIGHT BAR ---------------------- */ 
 
 .footer {
-  position: fixed;
+  overflow: hidden;
   left: 0;
   bottom: 0;
   width: 100%;
   background-color: black;
   color: white;
-  padding-left: 300px;
-  letter-spacing: 1.5px;
+/*  padding-left: 300px;*/
+/*  letter-spacing: 1.5px;*/
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #copyright {
