@@ -27,6 +27,14 @@
         <img src="assets/logo.png", height=50px, alt="logo", class="logo">
       </a>
 
+      <nav> 
+        <a href="index.html">Home</a></li>
+        <a href="projects.html">Projects</a></li>
+        <a href="cv.html">CV</a></li>
+        <a href="figure-skating.html">Figure Skating</a></li>
+        <a href="contact.html">Contact</a></li>
+      </nav>
+<!-- 
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -35,7 +43,7 @@
           <li><a href="figure-skating.html">Figure Skating</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-      </nav>
+      </nav> -->
 
     </div>
   </header>
@@ -44,6 +52,40 @@
 <div class="sub-header">
   <img src="assets/contact.png" height=100px>
 </div>
+
+<div class="contact-box">
+  <form onsubmit="sendEmail(); reset(); return false;">
+    <!-- <h3>GET IN TOUCH</h3> -->
+    <h3 class="center-txt">Have a question, comment, concern, or just want to say hello?</h3>
+    <p class="center-txt">Please feel free to leave a message here<br>~ OR ~<br>Reach out using any of the platforms linked at the footer below :)</p>
+    <p>&ensp; <span class="thicker">Name</span></p>
+    <input type="text" id="name" placeholder="Your Name ..." required>
+    <p>&ensp; <span class="thicker">Email</span></p>
+    <input type="email" id="email" placeholder="Your Email ..." required>
+    <p>&ensp; <span class="thicker">Message</span></p>
+    <textarea id="message" rows="6" placeholder="Your Message ..."></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</div>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<script>
+  function sendEmail(){
+    Email.send({
+          Host : "smtp.gmail.com",
+          Username : "nicole.brye9@gmail.com",
+          Password : "$Buddy12",
+          To : 'nbrye@ucsd.edu',
+          From : document.getElementByID("email").value,
+          Subject : "New Contact Form Inquiry",
+          Body : "And this is the body"
+      }).then(
+        message => alert(message)
+      );
+  }
+</script>
+
 
 <!-- <div class="contact-box">
   <form onsubmit="sendEmail(); reset(); return false;">
