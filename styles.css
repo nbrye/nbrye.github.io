@@ -45,6 +45,10 @@ td {
   padding: 15px;
 }
 
+tr.last {
+  border-bottom: none;
+}
+
 hr {
   border: 5px dotted;
   border-style: none none dotted; 
@@ -53,7 +57,6 @@ hr {
 }
 
 p a {
-/*  color: #E6B0AA;*/
   color: #2980B9;
   text-decoration: none;
 }
@@ -65,6 +68,12 @@ p a:hover {
 
 mark {
   background-color: #f2d7d5;
+}
+
+#main-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 1rem auto;
 }
 
 /* ------------------------ TOP NAVIGATION BAR ------------------------ */ 
@@ -175,15 +184,15 @@ nav li:hover {
 /* ----------------------------- DIVIDERS ----------------------------- */
 
 .divider {
-  padding-left: 300px;
-  padding-right: 300px;
+  max-width: 800px;
+  margin: 1rem auto;
   padding-bottom: 50px;
 }
 
 #top-divider {
+  max-width: 800px;
+  margin: 1rem auto;
   padding-top: 100px;
-  padding-left: 300px;
-  padding-right: 300px;
 }
 
 /* --------------------- PROFILE AND INTRO IMAGES --------------------- */ 
@@ -275,8 +284,10 @@ nav li:hover {
 
 /* Div padding */
 .text {
-  padding-left: 300px;
-  padding-right: 300px;
+/*  padding-left: 300px;
+  padding-right: 300px;*/
+  margin-left: 23%;
+  margin-right: 23%;
 }
 
 .center-img {
@@ -318,9 +329,12 @@ nav li:hover {
 
 /* Div padding */
 .card {
+  width: 90%;
+  max-width: 800px;
+  margin: 1rem auto;
   border-radius: 5px;
-  margin-left: 300px;
-  margin-right: 300px;
+/*  margin-left: 300px;
+  margin-right: 300px;*/
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 1px;
@@ -341,7 +355,7 @@ nav li:hover {
 .small-tag {
   border-radius: 5px;
   background-color: #F2D7D5;
-  width: 85%;
+  width: 100%;
   text-align: center;
   /*margin-right: 10px;
   padding-left: 15px;*/
@@ -470,6 +484,7 @@ input {
 /*  letter-spacing: 1.5px;*/
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-top: 50px;
 }
 
 #copyright {
