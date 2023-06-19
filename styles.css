@@ -132,9 +132,14 @@ header::after {
   clear: both;
 }
 
+.topnav {
+  max-width: 800px;
+  margin: 0rem auto;
+}
+
 nav {
   float: right;
-  margin-right: 300px;
+/*  margin-right: 300px;*/
   padding-top: 25px;
 }
 
@@ -176,7 +181,7 @@ nav li:hover {
 .logo {
   float: left;
   padding: 10px 0;
-  margin-left: 300px;
+/*  margin-left: 300px;*/
 }
 
 
@@ -251,6 +256,15 @@ nav li:hover {
   display: inline-block;
   float: right;
   margin-top: 50px;
+}
+
+.test2 {
+  display: inline-block;
+}
+
+.word-img {
+  max-width:90%;
+  max-height: 50px;
 }
 
 /* Color changing icons on hover */
@@ -329,7 +343,6 @@ nav li:hover {
 
 /* Div padding */
 .card {
-  width: 90%;
   max-width: 800px;
   margin: 1rem auto;
   border-radius: 5px;
@@ -367,59 +380,16 @@ nav li:hover {
 
 /* -------------------------- CONTACT FORM -------------------------- */ 
 
-/*.contact-box {
-  width: 500px;
-  background-color: #fff;
-  box-shadow: 0 0 20px 0 #999;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  position: absolute;
-}
-
 form {
-  margin: 35px;
-}
-
-.input-field {
-  width: 400px;
-  height: 40px;
-  margin-top: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border: 1px solid #777;
-  border-radius: 14px;
-  outline: none;
-}
-
-.textarea-field {
-  height: 150px;
-  padding-top: 10px;
-}
-
-.btn {
-  border-radius: 20px;
-  color: #fff;
-  margin-top: 18px;
-  padding: 10px;
-  background-color: #47c35a;
-  font-size: 12px;
-  border: none;
-  cursor: pointer;
-}*/
-
-
-form {
-/*  background: #f2d7d5;*/
-/*  background: #D6DBDF;*/
   background: #EBEDEF;
   display: flex;
   flex-direction: column;
   padding: 2vw 4vw;
   width: 90%;
-  max-width: 600px;
+  max-width: 500px;
   border-radius: 10px;
-  margin-left: 300px;
+/*  margin-left: 300px;*/
+  margin: auto;
   margin-bottom: 50px;
 }
 
