@@ -341,7 +341,8 @@ nav li:hover {
 }
 
 .card-header {
-  font-size: 25px;
+  font-size: 22px;
+  font-weight: 400;
 }
 
 .date {
