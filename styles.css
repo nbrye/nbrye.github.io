@@ -66,12 +66,28 @@ p a:hover {
   color: #1F618D;
 }
 
+li a {
+  color: #2980B9;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: underline;
+  color: #1F618D;
+}
+
 mark {
   background-color: #f2d7d5;
 }
 
 #main-container {
   width: 90%;
+  max-width: 800px;
+  margin: 1rem auto;
+}
+
+#test-container {
+  width: 100%;
   max-width: 800px;
   margin: 1rem auto;
 }
@@ -248,8 +264,6 @@ nav li:hover {
 
 /* Div padding */
 .text {
-/*  padding-left: 300px;
-  padding-right: 300px;*/
   margin-left: 23%;
   margin-right: 23%;
 }
@@ -271,25 +285,6 @@ nav li:hover {
 
 /* -------------------------- PROJECT CARDS ------------------------- */ 
 
-/*.vert-card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 30%;
-  font-size: 15px;
-  display: inline-block;
-}*/
-
-/* On mouse-over, add a deeper shadow */
-/*.vert-card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}*/
-
-/* Add some padding inside the card container */
-/*.container {
-  padding: 2px 16px;
-}*/
-
-
 .pwrapper {
   display: grid;
   grid-auto-rows: auto;
@@ -308,7 +303,6 @@ nav li:hover {
 }
 
 .pcard:hover {
-/*  border-color: #E6B0AA;*/
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
@@ -331,8 +325,6 @@ nav li:hover {
   max-width: 800px;
   margin: 1rem auto;
   border-radius: 5px;
-/*  margin-left: 300px;
-  margin-right: 300px;*/
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 1px;
@@ -356,12 +348,38 @@ nav li:hover {
   background-color: #F2D7D5;
   width: 100%;
   text-align: center;
-  /*margin-right: 10px;
-  padding-left: 15px;*/
 }
 
 .right-column {
   line-height: 1.5;
+}
+
+/* ----------------------- FIGURE SKATING PAGE ---------------------- */ 
+
+.fwrapper {
+  border: 20px solid #e7e7e7;
+  border-radius: 4px;
+  padding: 2rem;
+  max-width: 700px;
+  margin: 1rem auto;
+}
+
+.fcard-top {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.fcard-elements {
+  max-width: 700px;
+}
+
+.highlights {
+  padding: 20px 0px;
+}
+
+.pink-header {
+  color: #E6B0AA;
+  font-size: 30px;
 }
 
 /* -------------------------- CONTACT FORM -------------------------- */ 
@@ -374,7 +392,6 @@ form {
   width: 90%;
   max-width: 500px;
   border-radius: 10px;
-/*  margin-left: 300px;*/
   margin: auto;
   margin-bottom: 50px;
 }
