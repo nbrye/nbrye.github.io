@@ -9,13 +9,14 @@
 /* Font and weight */
 body {
     font-family: 'Lato', sans-serif;
-    font-weight: 200;
+    font-weight: 349;
 }
 
 /* Text size and line spacing */
 p {
-  font-size: 18px;
+  font-size: 19px;
   line-height: 1.35;
+  padding-top: 20px;
 }
 
 /* Accent colors, sizes, and padding */
@@ -42,7 +43,7 @@ tr {
 }
 
 td {
-  padding: 15px;
+  padding: 15px !important;
 }
 
 tr.last {
@@ -50,10 +51,10 @@ tr.last {
 }
 
 hr {
-  border: 5px dotted;
-  border-style: none none dotted; 
-  opacity: 50%;
-  z-index: 500;
+  border: 6px dotted !important;
+  border-style: none none dotted !important; 
+  opacity: 50% !important;
+  z-index: 500 !important;
 }
 
 p a {
@@ -77,7 +78,7 @@ li a:hover {
 }
 
 mark {
-  background-color: #f2d7d5;
+  background-color: #f2d7d5 !important;
 }
 
 #main-container {
@@ -102,6 +103,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 550;
+  opacity: 95%;
 }
 
 header::after {
@@ -118,6 +120,7 @@ header::after {
 nav {
   float: right;
   padding-top: 25px;
+  padding-bottom: 20px;
 }
 
 nav a {
@@ -128,12 +131,14 @@ nav a {
   text-align: center;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 27px;
+  padding-bottom: 26px;
 }
 
 nav a:hover {
   background-color: #E6B0AA;
+  text-decoration: none;
+  color: black;
 }
 
 
@@ -154,13 +159,14 @@ nav li:hover {
   max-width: 800px;
   margin: 1rem auto;
   padding-bottom: 50px;
+  padding-top: 15px;
 }
 
 #top-divider {
   max-width: 800px;
   margin: 1rem auto;
   padding-top: 100px;
-  padding-bottom: 20px;
+  padding-bottom: 35px;
 }
 
 #page-divider {
@@ -281,6 +287,7 @@ nav li:hover {
 
 .smaller {
   font-size: 15px;
+  background-color: #f2d7d5;
 }
 
 /* -------------------------- PROJECT CARDS ------------------------- */ 
@@ -299,7 +306,7 @@ nav li:hover {
   border: 2px solid #e7e7e7;
   border-radius: 4px;
   padding: .5rem;
-  height: 450px;
+  height: 500px;
 }
 
 .pcard:hover {
@@ -314,8 +321,8 @@ nav li:hover {
 }
 
 .plink {
-  text-decoration: none;
-  color: black;
+  text-decoration: none !important;
+  color: black !important;
 }
 
 /* ---------------------------- CV CARDS ---------------------------- */ 
@@ -360,7 +367,7 @@ nav li:hover {
   border: 20px solid #e7e7e7;
   border-radius: 4px;
   padding: 2rem;
-  max-width: 700px;
+  max-width: 800px;
   margin: 1rem auto;
 }
 
@@ -390,7 +397,7 @@ form {
   flex-direction: column;
   padding: 2vw 4vw;
   width: 90%;
-  max-width: 500px;
+  max-width: 625px;
   border-radius: 10px;
   margin: auto;
   margin-bottom: 50px;

@@ -7,24 +7,18 @@
   <link rel="icon" href="assets/logo2.png">
   <script src="https://kit.fontawesome.com/c1ea31dab3.js" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
 
 <!-- Top Navigation Bar -->
-<!-- <div class="topnav">
-  <a href="index.html">Home</a>
-  <a href="projects.html">Projects</a>
-  <a href="cv.html">CV</a>
-  <a href="figure-skating.html">Figure Skating</a>
-  <a class="active" href="contact.html">Contact</a>
-</div> -->
-
-<!-- Top Navigation Bar -->
   <header>
     <div class="topnav">
       <a href="index.html">
-        <img src="assets/logo3.png", height=50px, alt="logo", class="logo">
+        <img src="assets/logo3.png", height=70px, alt="logo", class="logo">
       </a>
 
       <nav> 
@@ -34,17 +28,6 @@
         <a href="figure-skating.html">Figure Skating</a></li>
         <a href="contact.html">Contact</a></li>
       </nav>
-<!-- 
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="cv.html">CV</a></li>
-          <li><a href="figure-skating.html">Figure Skating</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav> -->
-
     </div>
   </header>
 
@@ -52,6 +35,8 @@
 <div class="sub-header">
   <img src="assets/contact.png" height=100px>
 </div>
+
+<br><br>
 
 <div class="contact-box">
   <form action="https://formsubmit.co/nab2217@columbia.edu" method="POST">
@@ -68,53 +53,6 @@
     <button type="submit">Send Message</button>
   </form>
 </div>
-
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-
-<script>
-  function sendEmail(){
-    Email.send({
-          Host : "smtp.gmail.com",
-          Username : "nicole.brye9@gmail.com",
-          Password : "$Buddy12",
-          To : 'nbrye@ucsd.edu',
-          From : document.getElementByID("email").value,
-          Subject : "New Contact Form Inquiry",
-          Body : "And this is the body"
-      }).then(
-        message => alert(message)
-      );
-  }
-</script>
-
-
-<!-- <div class="contact-box">
-  <form onsubmit="sendEmail(); reset(); return false;">
-    <input type="text" class="input-field" placeholder="Your Name">
-    <input type="email" class="input-field" placeholder="Your Email">
-    <input type="text" class="input-field" placeholder="Subject">
-    <textarea type="text" class="input-field textarea-field" placeholder="Your Message"></textarea>
-    <button type="button", class="btn">Send Message</button>
-  </form>
-</div>
-
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script>
-  function sendEmail(){
-    Email.send({
-      Host : "smtp.gmail.com",
-      Username : "nicole.brye9@gmail.com",
-      Password : "password",
-      To : 'nabrye@yahoo.com',
-      From : document.getElementByID("email").value,
-      Subject : "New Contact Form Inquiry",
-      Body : "And this is the body"
-    }).then(
-      message => alert(message)
-    );
-  }
-
-</script> -->
 
 
 <div class="footer">
