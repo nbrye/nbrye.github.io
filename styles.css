@@ -10,6 +10,7 @@
 body {
     font-family: 'Lato', sans-serif;
 /*    font-weight: 350 !important;*/
+    overflow-x: hidden;
 }
 
 /* Text size and line spacing */
@@ -210,6 +211,11 @@ nav li:hover {
     padding-right: 35px;
   }
 
+  .pwrapper {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
 }
 
 @media (max-width: 800px) {
@@ -277,6 +283,10 @@ nav li:hover {
     width: 93%;
     padding-right: 35px;
     padding-bottom: 50px;
+  }
+
+  #cv-title {
+    display: inline-flex;
   }
 
 }
@@ -388,6 +398,14 @@ nav li:hover {
   max-height: 50px;
 }
 
+.page-title {
+  max-width: 90%;
+}
+
+/*#shrink {
+  max-width: 90%;
+}*/
+
 .sub-header {
   margin: 1rem auto;
   max-width: 800px;
@@ -466,7 +484,7 @@ nav li:hover {
   border: 2px solid #e7e7e7;
   border-radius: 4px;
   padding: .5rem;
-  height: 500px;
+  height: 550px;
 }
 
 .pcard:hover {
@@ -492,16 +510,18 @@ nav li:hover {
   max-width: 800px;
   margin: 1rem auto;
   border-radius: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 1px;
   padding-bottom: 1px;
   box-shadow: 0 4px 14px 0 rgba(0,0,0,0.1);
+  border: none !important;
 }
 
 .card-header {
   font-size: 22px;
   font-weight: 400;
+  border-bottom: none !important;
 }
 
 .date {
@@ -520,6 +540,15 @@ nav li:hover {
 .right-column {
   line-height: 1.5;
 }
+
+.table-wrap {
+  margin-left: 20px;
+  padding-right: 20px;
+}
+
+  #cv-title {
+    float:right;
+  }
 
 /* ----------------------- FIGURE SKATING PAGE ---------------------- */ 
 
