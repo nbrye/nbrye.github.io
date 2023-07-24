@@ -9,7 +9,7 @@
 /* Font and weight */
 body {
     font-family: 'Lato', sans-serif;
-    font-weight: 349;
+/*    font-weight: 350 !important;*/
 }
 
 /* Text size and line spacing */
@@ -104,6 +104,8 @@ header {
   width: 100%;
   z-index: 550;
   opacity: 95%;
+  border-bottom: 2px solid #E6B0AA;
+  height: 80px;
 }
 
 header::after {
@@ -131,8 +133,8 @@ nav a {
   text-align: center;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 27px;
-  padding-bottom: 26px;
+  padding-top: 30px;
+  padding-bottom: 32px;
 }
 
 nav a:hover {
@@ -141,6 +143,9 @@ nav a:hover {
   color: black;
 }
 
+nav a.active {
+   background-color: #E6B0AA;
+}
 
 nav li:hover {
   background-color: #E6B0AA;
@@ -148,10 +153,170 @@ nav li:hover {
 
 .logo {
   float: left;
-  padding: 10px 0;
+  padding-top: 12px;
+  padding-bottom: 5px;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+  margin-bottom: 100px;
+  padding-top: 5px;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 870px) {
+  img.logo{
+    padding-left: 35px;
+  }
+
+  img.profile {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+
+  div#introphoto {
+    margin-right: 35px;
+  }
+
+  div#top-divider{
+    /*border: 6px dotted !important;
+    border-style: none none dotted !important; 
+    opacity: 50% !important;
+    z-index: 500 !important;*/
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  div.divider {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  img.page-title{
+    padding-left: 35px;
+  }
+
+  div#page-divider {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  .checkbtn {
+    display: block !important;
+  }
+
+  nav {
+    position: fixed;
+    text-align: right;
+    width: 100%;
+    height: 40px;
+    margin-top: 55px;
+    left: -100%;
+    transition: all .5s;
+
+  }
+
+  nav a {
+    display: inline-block !important;
+    width: 100%;
+    background: #E6B0AA;  
+    padding-left: 0;
+  }
+
+  nav a:hover {
+    color: white;
+  }
+
+  #check:checked ~nav {
+    left: 0;
+  }
+
+  nav a.active {
+     color: white;
+  }
+
+  img.profile {
+/*    margin-left: 35px;*/
+/*    margin-right: 35px;*/
+    width: 100%;
+  }
+
+  div.header {
+    display: block;
+  }
+
+  div#intro {
+    width: 100%;
+  }
+
+  img#resize {
+    width: 100%;
+  }
+
+  div#introphoto {
+    padding-left: 50px;
+    padding-right: 10px;
+
+/*    width: 100%;*/
+  }
+
+  div#profile-photo {
+    width: 93%;
+    padding-right: 35px;
+    padding-bottom: 50px;
+  }
+
 }
 
 
+/* -------------------- COLLAPSIBLE NAVIGATION BAR -------------------- */ 
+
+.navbar {
+      background-color: #333;
+    }
+
+.navbar a {
+  display: block;
+  color: white;
+  text-align: center;
+/*  padding: 14px 16px;*/
+  text-decoration: none;
+}
+
+/* Style for the collapsible content */
+.collapsible-content {
+  display: none;
+  background-color: #f1f1f1;
+}
+
+/* Style to show content when the collapsible is active */
+/*.active {
+  display: block;
+}*/
+
+#test-icon {
+  color: white;
+}
+
+.checkbtn {
+  color: white;
+  float:right;
+  height: 10px;
+  margin-bottom: 10px;
+}
 
 /* ----------------------------- DIVIDERS ----------------------------- */
 
@@ -194,11 +359,6 @@ nav li:hover {
 .profile {
   border-radius: 5%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-/* Flex display to place images side by side */
-#parent {
-  display: flex;
 }
 
 /* Profile photo div sizing */
@@ -473,7 +633,7 @@ input {
 /* ---------------------- Testing Purposes ---------------------- */ 
 
 /*/* CSS for small screens */
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   .topnav nav {
     display: none;
   }
@@ -485,10 +645,10 @@ input {
   .topnav.collapsed .navbar-toggler-icon:before {
     content: '☰';
   }
-}
+}*/
 
 /* CSS for larger screens */
-@media (min-width: 769px) {
+/*@media (min-width: 769px) {
   .topnav nav {
     display: block;
   }
@@ -500,10 +660,10 @@ input {
   .topnav.collapsed .navbar-toggler-icon:before {
     content: '☰';
   }
-}
+}*/
 
 
-.navbar-toggler {
+/*.navbar-toggler {
   display: none;
 }
 
@@ -513,4 +673,4 @@ input {
 
 .topnav.collapsed .navbar-toggler-icon:before {
   content: '✕';
-}
+}*/
